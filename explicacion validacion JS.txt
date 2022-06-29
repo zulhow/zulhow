@@ -1,0 +1,6 @@
+1. Capturar el envio del formulario con JS
+2. Detener el envio del formulario para que NO pase a PHP
+3. Validar cada campo del formulario
+4. 
+	a. Si hay un error o varios, mostrar los errores en el html y NO enviar el formulario.
+	b. Capturar si no hay ningun error en los campos, Enviar el formulario
