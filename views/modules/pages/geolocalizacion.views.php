@@ -2,10 +2,12 @@
 	<div class="row justify-content-center">
 		<h1 class=" titulo-geo text-center mb-4">Geolocalización</h1>
 		<?php if(isset($_GET["id"]) AND $_GET["id"] > 0): ?>
-			<div class="col-md-6 recuadro2 pt-1" method="post" >
-			<h2 class="titulo2-geo2">Seguimiento del envío</h2>
-			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13642005.09047396!2d-61.530553759974474!3d-38.008919819985124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1656787587169!5m2!1ses!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" class="mb-3" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-			<button id="btn-env-geo" type="button" class="btn btn-primary"/></i><a href="/geolocalizacion">Cerrar mapa</a></button> 
+			<div class="col-md-6 recuadro2 px-0" method="post" >
+			<h2 class="titulo2-geo2 pt-1">Seguimiento del envío</h2>
+			<div style="height: 450px;">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13642005.09047396!2d-61.530553759974474!3d-38.008919819985124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1656787587169!5m2!1ses!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" class="mb-3" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+			<a id="btn-env-geo" class="btn btn-primary" href="/geolocalizacion"/></i>Cerrar mapa</a> 
 			</div>
 			
 		<?php else: ?>
