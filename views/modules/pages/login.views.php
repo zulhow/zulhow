@@ -19,6 +19,15 @@
 	</div>
 </div>
 <?php endif; ?>
+<?php if (isset($_GET["id"]) AND strpos($_GET["id"], "cambios") != false): ?>
+<div>
+	<div class="alert alert-success" role="alert">
+	  <div class="text-center">
+	      ¡La contraseña fue cambiada con exito!
+	  </div>                 
+	</div>
+</div>
+<?php endif; ?>
 <div class="container mt-5" id="login">
 	<h1 class="panel-title2 text-center mb-4">Log In</h1>
 	<form method="post" class="row justify-content-center">
