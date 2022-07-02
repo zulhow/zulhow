@@ -19,7 +19,7 @@
 	</div>
 </div>
 <?php endif; ?>
-<?php if (isset($_GET["id"]) AND strpos($_GET["id"], "cambios") != false): ?>
+<?php if (isset($_GET["id"]) AND strpos($_GET["id"], "cambio") != false): ?>
 <div>
 	<div class="alert alert-success" role="alert">
 	  <div class="text-center">
