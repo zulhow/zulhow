@@ -4,8 +4,8 @@
 	require_once("controller/usuarioController.php");
 	require_once("controller/contactoController.php");
 	require_once("controller/enviosController.php");
-	require_once("controller/MailerController.php");
-	require_once("controller/AyudaController.php");
+	require_once("controller/mailerController.php");
+	require_once("controller/ayudaController.php");
 
 	/*MODELO*/
 	require_once("model/usuarioModel.php");
