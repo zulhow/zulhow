@@ -204,8 +204,10 @@ picture img{
 }
 
 #caja-geo .row .btn{
-	margin-top: 15px;
-	width: 50%;
+	font-size: 20px;
+    font-weight: bold;
+    margin-top: 15px;
+    padding: 7px 20px;
 }
 
 .titulo-geo,.h1{

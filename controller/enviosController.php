@@ -62,7 +62,7 @@ require($_SERVER["DOCUMENT_ROOT"].'/vendor/autoload.php');
             $email2 = $envioActual["email2"];
             $message = 
             "<h1>Este es un mensaje automatico</h1>
-            <p>El pago del envio de la persona: <b>".$envioActual["nombre_completo"]."</b> y hacia destino persona:<b>".$envioActual["nombre_completo2"]."</b>.<br> Esta en proceso, el siguiente link es para el seguimiento del envio.<br>El codigo es <h3>".$code."</h3> <br> <a href='https://zulhow.herokuapp.com/seguimiento/".$code."'>Seguimiento</a></p>";
+            <p>El pago del envio de la persona: <b>".$envioActual["nombre_completo"]."</b> y hacia destino persona:<b>".$envioActual["nombre_completo2"]."</b>.<br> Esta en proceso, el siguiente link es para el seguimiento del envio.<br>El codigo es <h3>".$code."</h3> <br> <a href='https://zulhow.herokuapp.com/geolocalizacion/".$code."'>Seguimiento</a></p>";
             $subject = "Confirmacion de un pago - ZULHOW S.A.";
             MailerController::sendEmail($email, $message, $subject);
             MailerController::sendEmail($email2, $message, $subject);
