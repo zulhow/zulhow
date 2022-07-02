@@ -2,7 +2,7 @@
 	<div class="row justify-content-center">
 		<h1 class=" titulo-geo text-center mb-4">Geolocalización</h1>
 		<?php if(isset($_GET["id"]) AND $_GET["id"] > 0): ?>
-			<iframe class="map" width="80%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/@-38.0089198,-61.5305538,4.92z?authuser=1?output=embed"></iframe>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13642005.09047396!2d-61.530553759974474!3d-38.008919819985124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1656787587169!5m2!1ses!2sar" width="80%" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 		<?php else: ?>
 		<form class="col-md-6 recuadro2" method="post" >
 			<h2 class="titulo2-geo2">Seguimiento del envío</h2>
