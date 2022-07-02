@@ -208,6 +208,10 @@ picture img{
   	border-radius: 12px;
   	padding: 7px 30px;
 }
+#caja-geo .row .recuadro2-mapa a{
+	margin-left: 12px;
+	margin-bottom: 8px;
+}
 .wrapper-map{
 	height: 450px;
 }
