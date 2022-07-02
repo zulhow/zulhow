@@ -72,7 +72,7 @@
 				if (count($check) > 0) {
 					$cambiado = usuarioModel::cambiar_password($array);
 					if ($cambiado) {
-						header("location:/login/cambio");
+						header("location:/login/_cambio");
 					}
 				}
 			}
