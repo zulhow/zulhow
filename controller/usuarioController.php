@@ -37,7 +37,7 @@
 			if ($respuesta != 0) {
 				$code = rand(10000, 999999);
 				$message = "<h2>Proceso de recuperacion de contraseña</h2> 
-				<p>Usted a solicitado un correo de recuperacion, el codigo de recuperacion es: <b>".$code."</b><p> <br><a href='zulhow.com/cambiar_password/".$code."'>LINK DE RECUPERACION</a><p>Muchas gracias!</p>";
+				<p>Usted a solicitado un correo de recuperacion, el codigo de recuperacion es: <b>".$code."</b><p> <br><a href='https://zulhow.herokuapp.com/cambiar_password/".$code."'>LINK DE RECUPERACION</a><p>Muchas gracias!</p>";
 				$subject = "Email de recuperacion : ZULHOW";
 				$respuesta_email = MailerController::sendEmail($email,$message,$subject);
 				if ($respuesta_email) {

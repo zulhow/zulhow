@@ -29,15 +29,15 @@ class ContactoController
 		if ($error == "") {
 			$array = ["email"=>$email,"nombre_completo"=>$nombre_completo,"telefono"=>$telefono,"cliente"=>$cliente,"mensaje"=>$mensaje];
 			$message = "
-				<i>Mensaje enviado desde el formulario de Contacto Zulhow.com</i>
+				<i>Mensaje enviado desde el formulario de Contacto zulhow.herokuapp.com</i>
 				<p>El usuario:<b>".$nombre_completo."</b> - <b>".$email."</b>,telefono: <b>".$telefono."</b></p>
 				<p>Mensaje:<br>".$mensaje."</p>
 			 ";
 			if ($cliente == "si") {
-				$subject = "CONTACTO de cliente | zulhow.com";
+				$subject = "CONTACTO de cliente | zulhow.herokuapp.com";
 			}
 			if ($cliente == "no") {
-				$subject = "CONTACTO de no-cliente | zulhow.com";
+				$subject = "CONTACTO de no-cliente | zulhow.herokuapp.com";
 			}
 
 			$respuesta = MailerController::sendEmail("zulhowtest@gmail.com",$message,$subject);
