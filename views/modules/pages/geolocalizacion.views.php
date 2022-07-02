@@ -11,9 +11,8 @@
 			
 			<p class="texto2-geo2">Este sistema permite la búsqueda de su producto adquirido a través de la geolocalización</p>
 
-			<div class="boton-geo">                   
+                
                 <button id="btn-env-geo" type="submit" name="consultar" class="btn btn-primary"/></i>Consultar</button>                
-            </div>
             <?php 
             if (isset($_POST["consultar"])) {
             	$a = new EnviosModel;
