@@ -2,7 +2,7 @@
 <div>
     <div class="alert alert-success" role="alert">
       <div class="text-center">
-          Bienvenido! <?= $_SESSION['nombre_completo'] ?>
+          Bienvenido <?= $_SESSION['nombre_completo'] ?>
       </div>                 
     </div>
 </div>

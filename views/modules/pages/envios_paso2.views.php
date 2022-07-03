@@ -3,7 +3,7 @@
  ?>
 <section id="envios_paso2" class="container">
 	<div class="row info_envio">
-		<h3>Informacion del envio</h3>
+		<h3>Información del envío</h3>
 		<hr class="col-md-8">
 		<div class="col-md-6 row text-secondary">
 			<h5 class="text-secondary">Origen</h5>

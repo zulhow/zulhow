@@ -1,12 +1,3 @@
-<?php if (isset($_GET["id"]) AND strpos($_GET["id"], "exito-login") != false): ?>
-<div>
-    <div class="alert alert-success" role="alert">
-      <div class="text-center">
-          Bienvenido! <?= $_SESSION['nombre_completo'] ?>
-      </div>                 
-    </div>
-</div>
-<?php endif; ?>
 <?php if (isset($_GET["id"]) AND strpos($_GET["id"], "editar-exito") != false): ?>
 <div>
 	<div class="alert alert-success" role="alert">
