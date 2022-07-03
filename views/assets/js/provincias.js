@@ -25,10 +25,10 @@ function ajaxProvincias(element,tipo){
 				opciones += "<option value='"+respuesta[i].id+"'>"+respuesta[i].localidad+"</option>";
 			}
 			if (tipo == "origen") {
-				$('.js-select2-localidad-1').select2("enable",false);
+				$('.js-select2-localidad-1').select2("enable");
 			}
 			else if(tipo == "destino"){
-    			$('.js-select2-localidad-2').select2("enable",false);
+    			$('.js-select2-localidad-2').select2("enable");
 			}
 			select_localidad.innerHTML = opciones;
 		}
