@@ -24,7 +24,12 @@ function ajaxProvincias(element,tipo){
 			for (var i = respuesta.length - 1; i >= 0; i--) {
 				opciones += "<option value='"+respuesta[i].id+"'>"+respuesta[i].localidad+"</option>";
 			}
-			select_localidad.select2("enable");
+			if (tipo == "origen") {
+				$('.js-select2-localidad-1').select2("enable",false);
+			}
+			else if(tipo == "destino"){
+    			$('.js-select2-localidad-2').select2("enable",false);
+			}
 			select_localidad.innerHTML = opciones;
 		}
 	});
