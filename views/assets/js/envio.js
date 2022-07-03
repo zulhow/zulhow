@@ -36,4 +36,4 @@ function form_envios(){
 		email.parentNode.querySelector(".error").classList.add("active");
 	}
 	
-});
+};
