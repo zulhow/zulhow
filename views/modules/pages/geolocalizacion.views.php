@@ -16,7 +16,7 @@
 			<p class="texto-geo">	Con el código a su email, usted podrá ver el trayecto de su envío a través del sistema de geolocalización.</p>
 
 			<div class="form-group input-geo">
-				<input type="number" name="codigo" class="input_user"  placeholder="Codigo de seguimiento">
+				<input type="number" name="codigo" class="form-control input_user"  placeholder="Codigo de seguimiento">
 			</div>
 			
 			<p class="texto2-geo2">Este sistema permite la búsqueda de su producto adquirido a través de la geolocalización.</p>
