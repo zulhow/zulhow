@@ -24,7 +24,7 @@
 
       <picture>
           <source media="(max-width: 967px)" srcset="/views/assets/img/portada1.jpg">
-           <img class="img-fluid"  src="/views/assets/img/portada.jpg" alt="Imagen de portada de camiones con el logo de zulhow s.a"/>
+           <img class="img-fluid"  src="/views/assets/img/portada1.jpg" alt="Imagen de portada de camiones con el logo de zulhow s.a"/>
        </picture>              
                
    </section>
