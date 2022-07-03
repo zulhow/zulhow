@@ -13,13 +13,13 @@
 		<?php else: ?>
 		<form class="col-md-6 recuadro2" method="post" >
 			<h2 class="titulo2-geo2">Seguimiento del envío</h2>
-			<p class="texto-geo">	Con el código a su email, usted podrá ver el trayecto de su envío a través del sistema de geolocalización</p>
+			<p class="texto-geo">	Con el código a su email, usted podrá ver el trayecto de su envío a través del sistema de geolocalización.</p>
 
 			<div class="form-group input-geo">
 				<input type="number" name="codigo" class="form-control input_user"  placeholder="Codigo de seguimiento">
 			</div>
 			
-			<p class="texto2-geo2">Este sistema permite la búsqueda de su producto adquirido a través de la geolocalización</p>
+			<p class="texto2-geo2">Este sistema permite la búsqueda de su producto adquirido a través de la geolocalización.</p>
 
                 
                 <button id="btn-env-geo" type="submit" name="consultar" class="btn btn-primary"/></i>Consultar</button>                
