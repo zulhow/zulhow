@@ -11,6 +11,12 @@ $(document).ready(function() {
 function ajaxProvincias(element,tipo){
 	let provinciaSelecion = element.options[element.selectedIndex].value;
 	let select_localidad = document.getElementById(tipo+"_localidad");
+	if (tipo == "origen") {
+		$('.js-select2-localidad-1').select2("enable",false);
+	}
+	else if(tipo == "destino"){
+		$('.js-select2-localidad-2').select2("enable",false);
+	}
 	$.ajax({
 		"type":"get",
 		"dataType":"json",
