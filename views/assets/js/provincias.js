@@ -1,7 +1,7 @@
 // In your Javascript (external .js resource or <script> tag)
 $(document).ready(function() {
-    $('.js-select2-localidad-1').select2();
-    $('.js-select2-localidad-2').select2();
+    $('.js-select2-localidad-1').select2("enable",false);
+    $('.js-select2-localidad-2').select2("enable",false);
 });
 
 
@@ -22,7 +22,7 @@ function ajaxProvincias(element,tipo){
 			for (var i = respuesta.length - 1; i >= 0; i--) {
 				opciones += "<option value='"+respuesta[i].id+"'>"+respuesta[i].localidad+"</option>";
 			}
-			
+			select_localidad.select2("enable");
 			select_localidad.innerHTML = opciones;
 		}
 	});
