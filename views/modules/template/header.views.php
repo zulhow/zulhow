@@ -80,16 +80,16 @@
             <!-- USUARIOS COMUNES -->
             <?php if (isset($_SESSION['es_admin']) AND $_SESSION['es_admin'] == 0):?>
             <li class="nav-item" class="nav-item <?php if($action == 'perfil') echo 'active'; ?>">
-              <a class="nav-link" href="perfil">Perfil</a>
+              <a class="nav-link <?php if($action == 'perfil') echo 'active'; ?> " href="perfil">Perfil</a>
             </li>
-            <li class="nav-item" class="nav-item <?php if($action == 'Envios') echo 'active'; ?>">
-              <a class="nav-link" href="envios">Envios</a>
+            <li class="nav-item" class="nav-item">
+              <a class="nav-link <?php if($action == 'envios') echo 'active'; ?> " href="envios">Envios</a>
             </li>
-            <li class="nav-item" class="nav-item <?php if($action == 'Geolocalizacion') echo 'active'; ?>">
-              <a class="nav-link" href="geolocalizacion">Geolocalizacion</a>
+            <li class="nav-item">
+              <a class="nav-link <?php if($action == 'geolocalizacion') echo 'active'; ?> " href="geolocalizacion">Geolocalizacion</a>
             </li>
             <li class="nav-item" class="nav-item <?php if($action == 'ayuda') echo 'active'; ?>">
-              <a class="nav-link" href="ayudas">Ayuda</a>
+              <a class="nav-link <?php if($action == 'ayudas') echo 'active'; ?> " href="ayudas">Ayuda</a>
             </li>
             <?php endif; ?>
             <!-- Para el administrador -->
