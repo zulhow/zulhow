@@ -196,14 +196,14 @@ picture img{
 
 /*Geolocalizacion*/
 #caja-geo .row .recuadro2{
-	background-color: #bababa;
+	background-color: #F1F1F1;
   	height: 500px;
   	margin-bottom: 30px;
   	border-radius: 12px;
   	padding: 7px 30px;
 }
 #caja-geo .row .recuadro2-mapa{
-	background-color: #bababa;
+	background-color: #F1F1F1;
   	margin-bottom: 30px;
   	border-radius: 12px;
   	padding: 7px 30px;
@@ -287,7 +287,7 @@ padding-top:20px;
 	margin-bottom: 0px;
 }
 #caja-ayuda .row .recuadro2{
-	background-color: #bababa;
+	background-color: #F1F1F1;
   	min-height: 400px;
   	margin-bottom: 30px;
   	border-radius: 12px;
