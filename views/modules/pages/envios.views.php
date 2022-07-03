@@ -12,29 +12,44 @@
 	$provincias = Loc_prov_Model::getProvincia();
 ?>
 <section id="envios" class="container">
-	<form method="post" class="row" id="form-envio" onSubmit="form_envios()">
+	<form method="post" class="row" id="form-envio" onSubmit="form_envios(this)">
 		<h3 class="text-secondary">Origen</h3>
 		<div class="form-group col-md-6">
 			<label for="">Nombre completo</label>
 			<input type="text" name="nombre_completo" class="form-control" id="nombre_completo">
 			<div class="alert alert-danger mb-0 text-center error" role="alert">
-	          <div>
-	              Debe tener al menos 3 caracteres
-	          </div>                 
-	        </div>
+        <div>
+            Nombre:Debe tener al menos 3 caracteres.
+        </div>                 
+      </div>
 			
 		</div>
 		<div class="form-group col-md-6">
 			<label for="">Correo electronico</label>
 			<input type="email" name="email" class="form-control" id="email" value="<?= $_SESSION['email'] ?>">
+			<div class="alert alert-danger mb-0 text-center error" role="alert">
+        <div>
+            Correo:Debe tener al menos 5 caracteres.
+        </div>                 
+      </div>
 		</div>
 		<div class="form-group col-md-6">
 			<label for="">Teléfono</label>
 			<input type="number" name="telefono" class="form-control" id="telefono" value="<?= $_SESSION['telefono'] ?>">
+			<div class="alert alert-danger mb-0 text-center error" role="alert">
+        <div>
+            Telefono:Debe tener al menos 4 numeros.
+        </div>                 
+      </div>
 		</div>
 		<div class="form-group col-md-6">
 			<label for="">Domicilio</label>
 			<input type="text" name="domicilio" class="form-control" id="domicilio" value="<?= $_SESSION['domicilio'] ?>">
+			<div class="alert alert-danger mb-0 text-center error" role="alert">
+        <div>
+            Domicilio:Debe tener al menos 3 caracteres.
+        </div>                 
+      </div>
 		</div>
 		<div class="form-group col-md-6">
 			<label for="">Provincia</label>
@@ -44,29 +59,58 @@
 					<option value="<?= $value["id"] ?>"><?= $value["provincia"] ?></option>
 				<?php endforeach ?>
 			</select>
+			<div class="alert alert-danger mb-0 text-center error" role="alert">
+        <div>
+            Provincia:Debe seleccionar una provincia.
+        </div>                 
+      </div>
 		</div>
 		<div class="form-group col-md-6">
 			<label for="">Localidad</label>
 			<select name="origen_localidad" id="origen_localidad"  id="origen_localidad" class="form-control js-select2-localidad-1">
-
 			</select>
+			<div class="alert alert-danger mb-0 text-center error" role="alert">
+        <div>
+            Localidad:Debe seleccionar una localidad.
+        </div>                 
+      </div>
 		</div>
 		<h3 class="text-secondary">Destino</h3>
 		<div class="form-group col-md-6">
 			<label for="">Nombre completo</label>
 			<input type="text" name="nombre_completo2" id="nombre_completo2" class="form-control">
+			<div class="alert alert-danger mb-0 text-center error" role="alert">
+        <div>
+            Nombre:Debe tener al menos 3 caracteres.
+        </div>                 
+      </div>
 		</div>
 		<div class="form-group col-md-6">
 			<label for="">Correo electronico</label>
 			<input type="email" name="email2" id="email2" class="form-control" value="<?= $_SESSION['email'] ?>">
+			<div class="alert alert-danger mb-0 text-center error" role="alert">
+        <div>
+            Correo:Debe tener al menos 5 caracteres.
+        </div>                 
+      </div>
 		</div>
 		<div class="form-group col-md-6">
 			<label for="">Teléfono</label>
 			<input type="number" name="telefono2"  id="telefono2" class="form-control" value="<?= $_SESSION['telefono'] ?>">
+			<div class="alert alert-danger mb-0 text-center error" role="alert">
+        <div>
+            Telefono:Debe tener al menos 4 numeros.
+        </div>                 
+      </div>
 		</div>
 		<div class="form-group col-md-6">
 			<label for="">Domicilio</label>
 			<input type="text" name="domicilio2" id="domicilio2" class="form-control" value="<?= $_SESSION['domicilio'] ?>">
+			<div class="alert alert-danger mb-0 text-center error" role="alert">
+        <div>
+            Domicilio:Debe tener al menos 3 caracteres.
+        </div>                 
+      </div>
 		</div>
 		<div class="form-group col-md-6">
 			<label for="">Provincia</label>
@@ -76,12 +120,21 @@
 					<option value="<?= $value["id"] ?>"><?= $value["provincia"] ?></option>
 				<?php endforeach ?>
 			</select>
+			<div class="alert alert-danger mb-0 text-center error" role="alert">
+        <div>
+            Provincia:Debe seleccionar una provincia.
+        </div>                 
+      </div>
 		</div>
 		<div class="form-group col-md-6">
 			<label for="">Localidad</label>
 			<select name="destino_localidad"  id="destino_localidad" id="destino_localidad" class="form-control js-select2-localidad-2">
-			
 			</select>
+			<div class="alert alert-danger mb-0 text-center error" role="alert">
+        <div>
+            Localidad:Debe seleccionar una localidad.
+        </div>                 
+      </div>
 		</div>
 		<hr>
 		<h3 class="text-secondary">Datos del paquete</h3>
@@ -109,10 +162,14 @@
 						<option value="23">23:00</option>
 						<option value="24">24:00</option>
 					</select>
+					<div class="alert alert-danger mb-0 text-center error" role="alert">
+		        <div>
+		            Franja horaria:Debe seleccionar una hora inicial.
+		        </div>                 
+		      </div>
 				</div>
 				<div class=" col-md-6">
 					<select name="franja_fin" class="form-control" id="franja_fin">
-
 					</select>
 				</div>
 			</div>
@@ -125,6 +182,11 @@
 				<option value="media">Mediano (200kg - 2999kg)</option>
 				<option value="chico">Chico (20kg - 199kg)</option>
 			</select>
+			<div class="alert alert-danger mb-0 text-center error" role="alert">
+        <div>
+            Tamaño de caja:Debe seleccionar una opcion.
+        </div>                 
+      </div>
 		</div>
 
 		<div class="form-group col-md-3" id="envios-precio">
