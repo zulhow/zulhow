@@ -29,7 +29,7 @@
 			<input type="email" name="email" class="form-control" id="email" value="<?= $_SESSION['email'] ?>">
 		</div>
 		<div class="form-group col-md-6">
-			<label for="">Telefono</label>
+			<label for="">Teléfono</label>
 			<input type="number" name="telefono" class="form-control" id="telefono" value="<?= $_SESSION['telefono'] ?>">
 		</div>
 		<div class="form-group col-md-6">
@@ -61,7 +61,7 @@
 			<input type="email" name="email2" id="email2" class="form-control" value="<?= $_SESSION['email'] ?>">
 		</div>
 		<div class="form-group col-md-6">
-			<label for="">Telefono</label>
+			<label for="">Teléfono</label>
 			<input type="number" name="telefono2"  id="telefono2" class="form-control" value="<?= $_SESSION['telefono'] ?>">
 		</div>
 		<div class="form-group col-md-6">
