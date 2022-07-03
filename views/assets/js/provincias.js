@@ -1,5 +1,7 @@
 // In your Javascript (external .js resource or <script> tag)
 $(document).ready(function() {
+    $('.js-select2-localidad-1').select2();
+    $('.js-select2-localidad-2').select2();
     $('.js-select2-localidad-1').select2("enable",false);
     $('.js-select2-localidad-2').select2("enable",false);
 });
