@@ -208,7 +208,7 @@ picture img{
   	border-radius: 12px;
   	padding: 7px 30px;
 }
-.input_user{
+#caja-geo .input_user{
 	border: 0px !important;
 }
 #caja-geo .row .recuadro2-mapa a{
