@@ -209,7 +209,7 @@ picture img{
   	padding: 7px 30px;
 }
 .input_user{
-	border: 0px;
+	border: 0px !important;
 }
 #caja-geo .row .recuadro2-mapa a{
 	margin-left: 12px;
