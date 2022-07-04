@@ -199,6 +199,7 @@
 </section>
 <?php 
 	if (isset($_POST["envio"])) {
+		var_dump($_POST);
 		$a = new EnviosController;
 		$a->setEnvio();
 	}
