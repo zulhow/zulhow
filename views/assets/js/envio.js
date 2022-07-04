@@ -116,8 +116,7 @@ function form_envios(element){
 		error = true;
 		destino_localidad.parentNode.querySelector(".error").classList.add("active");
 	}
-	console.log(franja_inicio_value);
-	console.log(franja_inicio);
+	console.log(franja_inicio.parentNode.querySelector(".error"));
 	if (franja_inicio_value.value == -1) {
 		error = true;
 		franja_inicio.parentNode.querySelector(".error").classList.add("active");
