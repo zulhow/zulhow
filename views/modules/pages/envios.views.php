@@ -67,7 +67,7 @@
 		</div>
 		<div class="form-group col-md-6">
 			<label for="">Localidad</label>
-			<select name="origen_localidad" id="origen_localidad"  id="origen_localidad" class="form-control js-select2-localidad-1">
+			<select name="origen_localidad" id="origen_localidad" class="form-control js-select2-localidad-1">
 			</select>
 			<div class="alert alert-danger mb-0 text-center error" role="alert">
         <div>
