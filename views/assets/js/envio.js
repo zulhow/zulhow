@@ -15,13 +15,11 @@ let nombre_completo;let email;let domicilio;let telefono;let origen_provincia;le
 let nombre_completo2;let email2;let domicilio2;let telefono2;let destino_provincia;let destino_localidad;
 let franja_inicio;let tamano_caja;
 
-function form_envios(element){
-	event.preventDefault();//Detiene el envio del formulario
+document.getElementById("btn-env-contacto").addEventListener("click",(element)=>{
 	let errores = document.querySelectorAll(".error");
 	Array.prototype.forEach.call(errores, (child) => {
 	    child.classList.remove("active");
 	});
-
 	nombre_completo = document.querySelector("#nombre_completo");
 	email = document.querySelector("#email");
 	telefono = document.querySelector("#telefono");
@@ -125,7 +123,8 @@ function form_envios(element){
 		tamano_caja.parentNode.querySelector(".error").classList.add("active");
 	}
 	if (error == false) {
-		document.getElementById("form-envio").submit();
+		element.setAttribute("type","submit");
+		element.click();
 	}
 	
-};
+});

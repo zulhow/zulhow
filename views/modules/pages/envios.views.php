@@ -194,7 +194,7 @@
 			<span class="text-danger"> </span>
 			<input type="hidden" name="precio" value="-1">
 		</div>
-		<button type="submit" class="btn mb-3" name="envio" id="btn-env-contacto">Siguiente</button>
+		<button type="button" class="btn mb-3" name="envio" id="btn-env-contacto">Siguiente</button>
 	<?php 
 		if (isset($_POST["envio"])) {
 			$a = new EnviosController;
