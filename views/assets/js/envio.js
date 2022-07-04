@@ -40,12 +40,12 @@ function form_envios(element){
 	tamano_caja = document.querySelector("#tamano_caja");
 	let franja_inicio_value = franja_inicio.options[franja_inicio.selectedIndex].value;
 	let tamano_caja_value = tamano_caja.options[tamano_caja.selectedIndex].value;
-	console.log(tamano_caja_value);
 
 	let origen_prov_value = origen_provincia.options[origen_provincia.selectedIndex].value;
-	let origen_loc_value = origen_localidad.options[origen_localidad.selectedIndex].value;
+
+	let origen_loc_value = origen_localidad.options[origen_localidad.selectedIndex].value ?? -1;
 	let destino_prov_value = destino_provincia.options[destino_provincia.selectedIndex].value;
-	let destino_loc_value = destino_localidad.options[destino_localidad.selectedIndex].value;
+	let destino_loc_value = destino_localidad.options[destino_localidad.selectedIndex].value ?? -1;
 	//Limpiar todos active en todos los elementos error del formulario , para que cuando vuelva a enviar el formulario no queden activos errores ya reparados.
 	let array_alertas = document.querySelectorAll(".error");//Coleccion de errores
 
