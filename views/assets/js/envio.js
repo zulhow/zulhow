@@ -83,11 +83,11 @@ function form_envios(element){
 		error = true;
 		domicilio.parentNode.querySelector(".error").classList.add("active");
 	}
-	if (origen_prov_value.value == -1) {
+	if (origen_prov_value == -1) {
 		error = true;
 		origen_provincia.parentNode.querySelector(".error").classList.add("active");
 	}
-	if (origen_loc_value.value == -1) {
+	if (origen_loc_value == -1) {
 		error = true;
 		origen_localidad.parentNode.querySelector(".error").classList.add("active");
 	}
@@ -108,20 +108,20 @@ function form_envios(element){
 		error = true;
 		domicilio2.parentNode.querySelector(".error").classList.add("active");
 	}
-	if (destino_prov_value.value == -1) {
+	if (destino_prov_value == -1) {
 		error = true;
 		destino_provincia.parentNode.querySelector(".error").classList.add("active");
 	}
-	if (destino_loc_value.value == -1) {
+	if (destino_loc_value == -1) {
 		error = true;
 		destino_localidad.parentNode.querySelector(".error").classList.add("active");
 	}
-	if (franja_inicio_value.value == -1) {
+	if (franja_inicio_value == -1) {
 		console.log(franja_inicio.parentNode.querySelector(".error"));
 		error = true;
 		franja_inicio.parentNode.querySelector(".error").classList.add("active");
 	}
-	if (tamano_caja_value.value == -1) {
+	if (tamano_caja_value == -1) {
 		error = true;
 		tamano_caja.parentNode.querySelector(".error").classList.add("active");
 	}
