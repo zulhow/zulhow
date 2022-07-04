@@ -42,10 +42,20 @@ function form_envios(element){
 	let tamano_caja_value = tamano_caja.options[tamano_caja.selectedIndex].value;
 
 	let origen_prov_value = origen_provincia.options[origen_provincia.selectedIndex].value;
+	if (typeof origen_localidad.options[origen_localidad.selectedIndex].value != "undefined") {
+		let origen_loc_value = origen_localidad.options[origen_localidad.selectedIndex].value;
+	}
+	else{
+		let origen_loc_value = -1;
+	}
 
-	let origen_loc_value = origen_localidad.options[origen_localidad.selectedIndex].value ?? -1;
 	let destino_prov_value = destino_provincia.options[destino_provincia.selectedIndex].value;
-	let destino_loc_value = destino_localidad.options[destino_localidad.selectedIndex].value ?? -1;
+	if (typeof destino_localidad.options[destino_localidad.selectedIndex].value != "undefined") {
+		let destino_loc_value = destino_localidad.options[destino_localidad.selectedIndex].value;
+	}
+	else{
+		let destino_loc_value = -1;
+	}
 	//Limpiar todos active en todos los elementos error del formulario , para que cuando vuelva a enviar el formulario no queden activos errores ya reparados.
 	let array_alertas = document.querySelectorAll(".error");//Coleccion de errores
 
