@@ -38,9 +38,10 @@ function form_envios(element){
 
 	franja_inicio = document.querySelector("#franja_inicio");
 	tamaño_caja = document.querySelector("#tamaño_caja");
-
+	console.log(franja_inicio);
 	let franja_inicio_value = franja_inicio.options[franja_inicio.selectedIndex].value;
 	let tamaño_caja_value = tamaño_caja.options[tamaño_caja.selectedIndex].value;
+	console.log(franja_inicio_value);
 
 	let origen_prov_value = origen_provincia.options[origen_provincia.selectedIndex].value;
 	let origen_loc_value = origen_localidad.options[origen_localidad.selectedIndex].value;

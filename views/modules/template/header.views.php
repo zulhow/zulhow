@@ -15,6 +15,7 @@
   y esto tira error ,con base le quitamos el /login del final y /registro tambien para todas las paginas
    -->
   <base href="https://zulhow.herokuapp.com/">
+  <!--<base href="https://zulhow.com/">-->
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Zulhow S.A</title>
