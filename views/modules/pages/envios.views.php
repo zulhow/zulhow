@@ -138,7 +138,7 @@
 		</div>
 		<hr>
 		<h3 class="text-secondary">Datos del paquete</h3>
-		<div class="form-group col-md-4 text-center">
+		<div class="form-group col-md-5 text-center">
 			<label for="">Franja Horaria del Remitente  (8-00)</label>
 			<div class="row">
 				<div class=" col-md-6">
