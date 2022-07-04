@@ -19,7 +19,7 @@
 			<input type="text" name="nombre_completo" class="form-control" id="nombre_completo">
 			<div class="alert alert-danger mb-0 text-center error" role="alert">
         <div>
-            Nombre:Debe tener al menos 3 caracteres.
+            Nombre: Debe tener al menos 3 caracteres.
         </div>                 
       </div>
 			
@@ -29,7 +29,7 @@
 			<input type="email" name="email" class="form-control" id="email" value="<?= $_SESSION['email'] ?>">
 			<div class="alert alert-danger mb-0 text-center error" role="alert">
         <div>
-            Correo:Debe tener al menos 5 caracteres.
+            Correo: Debe tener al menos 5 caracteres.
         </div>                 
       </div>
 		</div>
@@ -38,7 +38,7 @@
 			<input type="number" name="telefono" class="form-control" id="telefono" value="<?= $_SESSION['telefono'] ?>">
 			<div class="alert alert-danger mb-0 text-center error" role="alert">
         <div>
-            Telefono:Debe tener al menos 4 numeros.
+            Telefono: Debe tener al menos 4 numeros.
         </div>                 
       </div>
 		</div>
@@ -47,7 +47,7 @@
 			<input type="text" name="domicilio" class="form-control" id="domicilio" value="<?= $_SESSION['domicilio'] ?>">
 			<div class="alert alert-danger mb-0 text-center error" role="alert">
         <div>
-            Domicilio:Debe tener al menos 3 caracteres.
+            Domicilio: Debe tener al menos 3 caracteres.
         </div>                 
       </div>
 		</div>
@@ -61,7 +61,7 @@
 			</select>
 			<div class="alert alert-danger mb-0 text-center error" role="alert">
         <div>
-            Provincia:Debe seleccionar una provincia.
+            Provincia: Debe seleccionar una provincia.
         </div>                 
       </div>
 		</div>
@@ -71,7 +71,7 @@
 			</select>
 			<div class="alert alert-danger mb-0 text-center error" role="alert">
         <div>
-            Localidad:Debe seleccionar una localidad.
+            Localidad: Debe seleccionar una localidad.
         </div>                 
       </div>
 		</div>
@@ -81,7 +81,7 @@
 			<input type="text" name="nombre_completo2" id="nombre_completo2" class="form-control">
 			<div class="alert alert-danger mb-0 text-center error" role="alert">
         <div>
-            Nombre:Debe tener al menos 3 caracteres.
+            Nombre: Debe tener al menos 3 caracteres.
         </div>                 
       </div>
 		</div>
@@ -90,7 +90,7 @@
 			<input type="email" name="email2" id="email2" class="form-control" value="<?= $_SESSION['email'] ?>">
 			<div class="alert alert-danger mb-0 text-center error" role="alert">
         <div>
-            Correo:Debe tener al menos 5 caracteres.
+            Correo: Debe tener al menos 5 caracteres.
         </div>                 
       </div>
 		</div>
@@ -99,7 +99,7 @@
 			<input type="number" name="telefono2"  id="telefono2" class="form-control" value="<?= $_SESSION['telefono'] ?>">
 			<div class="alert alert-danger mb-0 text-center error" role="alert">
         <div>
-            Telefono:Debe tener al menos 4 numeros.
+            Telefono: Debe tener al menos 4 numeros.
         </div>                 
       </div>
 		</div>
@@ -122,7 +122,7 @@
 			</select>
 			<div class="alert alert-danger mb-0 text-center error" role="alert">
         <div>
-            Provincia:Debe seleccionar una provincia.
+            Provincia: Debe seleccionar una provincia.
         </div>                 
       </div>
 		</div>
@@ -132,7 +132,7 @@
 			</select>
 			<div class="alert alert-danger mb-0 text-center error" role="alert">
         <div>
-            Localidad:Debe seleccionar una localidad.
+            Localidad: Debe seleccionar una localidad.
         </div>                 
       </div>
 		</div>
