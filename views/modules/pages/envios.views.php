@@ -196,7 +196,6 @@
 		</div>
 		<button type="submit" class="btn mb-3" name="envio" id="btn-env-contacto">Siguiente</button>
 	<?php 
-	var_dump($_POST);
 		if (isset($_POST["envio"])) {
 			$a = new EnviosController;
 			$a->setEnvio();
