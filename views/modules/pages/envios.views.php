@@ -141,29 +141,32 @@
 		<div class="form-group col-md-5 text-center">
 			<label for="">Franja Horaria del Remitente  (8-00)</label>
 			<div class="row">
-
-					<select name="franja_inicio" class="form-control col-md-6" id="franja_inicio" onchange="franja_horaria(this)">
-						<option value="-1"></option>
-						<option value="8">08:00</option>
-						<option value="9">09:00</option>
-						<option value="10">10:00</option>
-						<option value="11">11:00</option>
-						<option value="12">12:00</option>
-						<option value="13">13:00</option>
-						<option value="14">14:00</option>
-						<option value="15">15:00</option>
-						<option value="16">16:00</option>
-						<option value="17">17:00</option>
-						<option value="18">18:00</option>
-						<option value="19">19:00</option>
-						<option value="20">20:00</option>
-						<option value="21">21:00</option>
-						<option value="22">22:00</option>
-						<option value="23">23:00</option>
-						<option value="24">24:00</option>
+					<div class="col-md-6">
+						<select name="franja_inicio" class="form-control" id="franja_inicio" onchange="franja_horaria(this)">
+							<option value="-1"></option>
+							<option value="8">08:00</option>
+							<option value="9">09:00</option>
+							<option value="10">10:00</option>
+							<option value="11">11:00</option>
+							<option value="12">12:00</option>
+							<option value="13">13:00</option>
+							<option value="14">14:00</option>
+							<option value="15">15:00</option>
+							<option value="16">16:00</option>
+							<option value="17">17:00</option>
+							<option value="18">18:00</option>
+							<option value="19">19:00</option>
+							<option value="20">20:00</option>
+							<option value="21">21:00</option>
+							<option value="22">22:00</option>
+							<option value="23">23:00</option>
+							<option value="24">24:00</option>
+						</select>
+					</div>
+					<div class="col-md-6">
+						<select name="franja_fin" class="form-control" id="franja_fin">
 					</select>
-					<select name="franja_fin" class="form-control col-md-6" id="franja_fin">
-					</select>
+					</div>
 					<div class="alert alert-danger mb-0 text-center error col-md-12" role="alert">
 		        <div>
 		          Debe seleccionar una hora inicial.

@@ -117,9 +117,8 @@ function form_envios(element){
 		destino_localidad.parentNode.querySelector(".error").classList.add("active");
 	}
 	if (franja_inicio_value == -1) {
-		console.log(franja_inicio.parentNode.querySelector(".error"));
 		error = true;
-		franja_inicio.parentNode.querySelector(".error").classList.add("active");
+		franja_inicio.parentNode.parentNode.querySelector(".error").classList.add("active");
 	}
 	if (tamano_caja_value == -1) {
 		error = true;
