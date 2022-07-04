@@ -141,8 +141,8 @@
 		<div class="form-group col-md-5 text-center">
 			<label for="">Franja Horaria del Remitente  (8-00)</label>
 			<div class="row">
-				<div class=" col-md-6">
-					<select name="franja_inicio" class="form-control" id="franja_inicio" onchange="franja_horaria(this)">
+
+					<select name="franja_inicio" class="form-control col-md-6" id="franja_inicio" onchange="franja_horaria(this)">
 						<option value="-1"></option>
 						<option value="8">08:00</option>
 						<option value="9">09:00</option>
@@ -162,16 +162,13 @@
 						<option value="23">23:00</option>
 						<option value="24">24:00</option>
 					</select>
-					<div class="alert alert-danger mb-0 text-center error" role="alert">
+					<select name="franja_fin" class="form-control col-md-6" id="franja_fin">
+					</select>
+					<div class="alert alert-danger mb-0 text-center error col-md-12" role="alert">
 		        <div>
 		          Debe seleccionar una hora inicial.
 		        </div>                 
 		      </div>
-				</div>
-				<div class=" col-md-6">
-					<select name="franja_fin" class="form-control" id="franja_fin">
-					</select>
-				</div>
 			</div>
 		</div>
 		<div class="form-group col-md-3">
