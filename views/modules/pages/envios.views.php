@@ -195,12 +195,11 @@
 			<input type="hidden" name="precio" value="-1">
 		</div>
 		<button type="submit" class="btn mb-3" name="envio" id="btn-env-contacto">Siguiente</button>
+	<?php 
+		if (isset($_POST["envio"])) {
+			$a = new EnviosController;
+			$a->setEnvio();
+		}
+	?>
 	</form>
 </section>
-<?php 
-	if (isset($_POST["envio"])) {
-		var_dump($_POST);
-		$a = new EnviosController;
-		$a->setEnvio();
-	}
-?>
