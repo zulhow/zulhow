@@ -12,7 +12,7 @@
 	$provincias = Loc_prov_Model::getProvincia();
 ?>
 <section id="envios" class="container">
-	<form method="post" class="row">
+	<form method="post" class="row" id="form-envio" >
 		<h3 class="text-secondary">Origen</h3>
 		<div class="form-group col-md-6">
 			<label for="">Nombre completo</label>
