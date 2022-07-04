@@ -42,7 +42,7 @@ function form_envios(element){
 	let tamano_caja_value = tamano_caja.options[tamano_caja.selectedIndex].value;
 
 	let origen_prov_value = origen_provincia.options[origen_provincia.selectedIndex].value;
-	if (typeof origen_localidad.options[origen_localidad.selectedIndex].value != "undefined") {
+	if (typeof origen_localidad.options[origen_localidad.selectedIndex] != "undefined") {
 		let origen_loc_value = origen_localidad.options[origen_localidad.selectedIndex].value;
 	}
 	else{
@@ -50,7 +50,7 @@ function form_envios(element){
 	}
 
 	let destino_prov_value = destino_provincia.options[destino_provincia.selectedIndex].value;
-	if (typeof destino_localidad.options[destino_localidad.selectedIndex].value != "undefined") {
+	if (typeof destino_localidad.options[destino_localidad.selectedIndex] != "undefined") {
 		let destino_loc_value = destino_localidad.options[destino_localidad.selectedIndex].value;
 	}
 	else{
