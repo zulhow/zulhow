@@ -21,13 +21,13 @@ require($_SERVER["DOCUMENT_ROOT"].'/vendor/autoload.php');
         $destino_localidad = htmlentities($_POST["destino_localidad"],ENT_COMPAT,"UTF-8");
         $franja_inicio = htmlentities($_POST["franja_inicio"],ENT_COMPAT,"UTF-8");
  		$franja_fin = htmlentities($_POST["franja_fin"],ENT_COMPAT,"UTF-8");
-
  		$array = ["precio"=>$precio,"email"=>$email,"nombre_completo"=>$nombre_completo,"telefono"=>$telefono,"domicilio"=>$domicilio,"email2"=>$email2,"nombre_completo2"=>$nombre_completo2,"telefono2"=>$telefono2,"domicilio2"=>$domicilio2,"tamano_caja"=>$tamano_caja,"origen_provincia"=>$origen_provincia,"origen_localidad"=>$origen_localidad,"destino_provincia"=>$destino_provincia,"destino_localidad"=>$destino_localidad,"franja_inicio"=>$franja_inicio,"franja_fin"=>$franja_fin];
+        var_dump($array);
  		$respuesta = EnviosModel::setEnvio($array);
  		if ($respuesta) {
- 			header("location:/envios_paso2/".$respuesta."/envio_success");
+ 			//header("location:/envios_paso2/".$respuesta."/envio_success");
  		}else{
- 			header("location:/envios/error");
+ 			//header("location:/envios/error");
 
  		}
  	}
