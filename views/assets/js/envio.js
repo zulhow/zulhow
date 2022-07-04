@@ -123,8 +123,8 @@ document.getElementById("btn-env-contacto").addEventListener("click",(element)=>
 		tamano_caja.parentNode.querySelector(".error").classList.add("active");
 	}
 	if (error == false) {
-		element.setAttribute("type","submit");
-		element.click();
+		document.getElementById("btn-env-contacto").setAttribute("type","submit");
+		document.getElementById("btn-env-contacto").click();
 	}
 	
 });
