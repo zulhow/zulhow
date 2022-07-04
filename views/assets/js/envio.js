@@ -13,7 +13,7 @@ function franja_horaria(element){
 let nombre_completo;let email;let domicilio;let telefono;let origen_provincia;let origen_localidad;
 
 let nombre_completo2;let email2;let domicilio2;let telefono2;let destino_provincia;let destino_localidad;
-let franja_inicio;let tamaño_caja;
+let franja_inicio;let tamano_caja;
 
 function form_envios(element){
 	event.preventDefault();//Detiene el envio del formulario
@@ -37,11 +37,10 @@ function form_envios(element){
 	destino_localidad = document.querySelector("#destino_localidad");
 
 	franja_inicio = document.querySelector("#franja_inicio");
-	tamaño_caja = document.querySelector("#tamaño_caja");
-	console.log(franja_inicio);
+	tamano_caja = document.querySelector("#tamano_caja");
 	let franja_inicio_value = franja_inicio.options[franja_inicio.selectedIndex].value;
-	let tamaño_caja_value = tamaño_caja.options[tamaño_caja.selectedIndex].value;
-	console.log(franja_inicio_value);
+	let tamano_caja_value = tamano_caja.options[tamano_caja.selectedIndex].value;
+	console.log(tamano_caja_value);
 
 	let origen_prov_value = origen_provincia.options[origen_provincia.selectedIndex].value;
 	let origen_loc_value = origen_localidad.options[origen_localidad.selectedIndex].value;
@@ -111,9 +110,9 @@ function form_envios(element){
 		error = true;
 		franja_inicio.parentNode.querySelector(".error").classList.add("active");
 	}
-	if (tamaño_caja_value.value == -1) {
+	if (tamano_caja_value.value == -1) {
 		error = true;
-		tamaño_caja.parentNode.querySelector(".error").classList.add("active");
+		tamano_caja.parentNode.querySelector(".error").classList.add("active");
 	}
 	if (error == false) {
 		element.submit();
