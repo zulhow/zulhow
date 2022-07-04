@@ -125,7 +125,7 @@ function form_envios(element){
 		tamano_caja.parentNode.querySelector(".error").classList.add("active");
 	}
 	if (error == false) {
-		element.submit();
+		document.getElementById("form-envio").submit();
 	}
 	
 };
