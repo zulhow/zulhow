@@ -164,7 +164,7 @@
 					</select>
 					<div class="alert alert-danger mb-0 text-center error" role="alert">
 		        <div>
-		            Franja horaria:Debe seleccionar una hora inicial.
+		          Debe seleccionar una hora inicial.
 		        </div>                 
 		      </div>
 				</div>
@@ -184,7 +184,7 @@
 			</select>
 			<div class="alert alert-danger mb-0 text-center error" role="alert">
         <div>
-            Tamaño de caja:Debe seleccionar una opcion.
+          Debe seleccionar una opcion.
         </div>                 
       </div>
 		</div>
